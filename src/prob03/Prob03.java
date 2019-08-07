@@ -11,12 +11,17 @@ public class Prob03 {
 		replaceSpace(c);
 
 		// 수정된 배열 원소 출력
-		printCharArray(c);
+		//printCharArray(c);
 	}
 
 	public static void replaceSpace(char c[]) {
+		String strConcat = String.copyValueOf(c);
+		String strReplace = strConcat.replace(' ', ',');
+		System.out.println(strReplace);
 	}
 
 	public static void printCharArray(char c[]) {
+		String strConcat = String.copyValueOf(c);
+		System.out.println(strConcat);
 	}
 }
